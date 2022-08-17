@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+<!-- ------------css link----------------------- -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Contact.css">
+<!-- ------------css link----------------------- -->
+<!-- --------------icon heading show------------------- -->
+<link rel="shortcut icon" href="./icon/contact us.png" type="image/x-icon">
+    <!-- ---- icons cdn------>=
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- ---- icons cdn------>
+    <!-- ---- google font------>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+<!-- ---- google font------>
+</head>
+<body>
+
+    <!-- ===================nav bar========================= -->
+    <nav>
+        <div class="container nav_container">
+            <a href="./index.html"><h4>Shayari Ka Pitara</h4></a>
+            <ul class="nav_menu " id="sidemenu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="https://shubham-05052000.github.io/MyOwnprotfolio/" target="_blank">About</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                
+                
+
+                </ul>
+                <i class="uil uil-multiply" id="close" onclick="closemenu()"></i>
+                <i class="uil uil-list-ul" id="open" onclick="openmenu()"></i>
+        </div>
+    </nav>
+
+
+<!-- ====================nav bar done============================= -->
+
+<!-- ====================Contact part ========================== -->
+<section class="Contact">
+    <div class="container contact_container">
+<!-- ================aside part======================== -->
+        <aside class="Contact_aside">
+            <div class="aside_image">
+                <img src="./image/Contact/contact.png" alt="">
+            </div>
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in dolores quibusdam ipsum esse delectus architecto, aperiam minima ad quaerat dolor cum?</p>
+            <ul class="Contact_details">
+                <li>
+                    <i class="uil uil-calling"></i>
+                    <h5><a href="tel:+919082361867">+919082361867</a></h5>
+                </li>
+                <li>
+                    <i class="uil uil-envelopes"></i>
+                    <h5><a href="mailto:shrivastavshubham778@gmail.com" class="email">shubham778@gmail.com</a></h5>
+                </li>
+                <li>
+                    <i class="uil uil-map-marker"></i>
+                    <a href="#">Mankhurd, Mumbai 400043</a>
+                </li>
+            </ul>
+            <ul class="Contact_socials">
+                <a href="#"><i class="uil uil-instagram"></i></a>
+                <a href="#"><i class="uil uil-twitter-alt"></i></a>
+                <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+            </ul>
+        </aside>
+        <!-- ================ end od the aside part======================== -->
+
+<!-- ==========from part======================= -->
+        <form action="https://formspree.io/f/xknenrez"  method="POST" class="Contact_form">
+            <div class="form_name">
+                <input type="text" name="First Name" placeholder="First Name" required>
+                <input type="text" name="Last Name" placeholder="Last Name" required>
+            </div>
+            <input type="email" name="Email" placeholder="Your Email Address" required>
+            <textarea name="Message"  rows="7" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-primary" >Submit</button>
+        </form>
+<!-- ==========End of the from part======================= -->
+
+    </div>
+</section>
+<!-- ==================== End of the Contact part ========================== -->
+
+
+
+
+ 
+
+
+   
+
+
+<!-- ===================footer===========================    -->
+<footer class="footer">
+    <div class="container footer_container">
+
+        <div class="footer_1">
+            <a href="index.html" class="footer_log"><h4>Shayari ka Pitara</h4></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorem!</p>
+        </div>
+
+        <div class="footer_2">
+            <h4>permalinks</h4>
+            <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://shubham-05052000.github.io/MyOwnprotfolio/" target="_blank">About</a></li>
+            <li><a href="index.html">Courses</a></li>
+            <li><a href="./Contact.html">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_3">
+            <h4>privacy</h4>
+            <ul class="privacy">
+            <li><a href="./privacy.html">privacy Policy</a></li>
+            <li><a href="./termandcondition.html">Term and Condition</a></li>
+            <li><a href="./Rating.html" target="_blank">Rating webiste</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="footer_1">
+            <h4>Contact Us</h4>
+            <div>
+                <a href="tel:+919082361867"><p>+919082361867</p></a>
+                <a href="mailto:shrivastavshubham778@gmail.com"><p>Shrivastavshubham778@gmail</p></a>
+                <ul class="footer_socials">
+                    <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+                    <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="#"><i class="uil uil-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer_copyright">
+        <small>Copyright &copy; Shayari ka Pitara with Shubham</small>
+    </div>
+</footer>
+
+
+<!-- ==============javascript==================== -->
+<script>
+var sidemenu=document.getElementById("sidemenu");
+var open=document.getElementById("open");
+var close=document.getElementById("close");
+
+function openmenu(){
+    sidemenu.style.right="0";
+    close.style.display="block"
+    open.style.display="none"
+    
+}
+function closemenu(){
+    sidemenu.style.right="-50%";
+    close.style.display="none"
+    open.style.display="block"
+}
+
+</script>
+
+</body>
+</html>

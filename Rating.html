@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating</title>
+    <link rel="stylesheet" href="./css/rating.css">
+    <script src="https://kit.fontawesome.com/f8e6a66ec7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./icon/review.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container" action="https://formspree.io/f/xdojowkj"  method="POST">
+        <div class="post">
+            <div class="text">Thanks For Rating this Website</div>
+            <div class="edit">Edit</div>
+        </div>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="https://formspree.io/f/xdojowkj"  method="POST">
+                <header></header>
+                <div class="textarea">
+                    <textarea name="" id="" cols="30" placeholder="Describe your thing..."></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit">POST</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector("button");//post button
+        const post = document.querySelector(".post");//post div
+        const widget = document.querySelector(".star-widget");//satrt widget class 
+        const editbtn = document.querySelector(".edit");//edit div 
+        //functiom create..
+        btn.onclick = () => {
+            widget.style.display = "none";//button per click karna per sart div none hoo jaaya ga
+            post.style.display = "block";//post show 
+            editbtn.onclick = () => {
+            widget.style.display = "block";//star wala block hoo jaaya ga dhow hooga click karna per 
+            post.style.display = "none";//dont show post div it is edit the commite
+        }
+        return false;
+        }
+    </script>
+</body>
+
+</html>

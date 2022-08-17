@@ -1,0 +1,14 @@
+.content_privacy p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 25px !important;
+    color: dark;
+    margin-bottom: 2rem;
+   
+}
+.content_privacy .privacy_use li{
+    list-style: square;
+}
